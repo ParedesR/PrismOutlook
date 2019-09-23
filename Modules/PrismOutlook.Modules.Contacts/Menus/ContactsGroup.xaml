@@ -1,0 +1,15 @@
+﻿<igWpf:OutlookBarGroup x:Class="PrismOutlook.Modules.Contacts.Menus.ContactsGroup"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:ig="http://schemas.infragistics.com/xaml"
+             xmlns:igWpf="http://schemas.infragistics.com/xaml/wpf"       
+             xmlns:igDock="http://infragistics.com/DockManager"       
+             xmlns:igThemes="http://infragistics.com/Themes" 
+             xmlns:local="clr-namespace:PrismOutlook.Modules.Contacts.Menus"
+             Header="Contacts">
+    <Grid>
+      <TextBlock Text="Testing Contacts"></TextBlock>
+   </Grid>
+</igWpf:OutlookBarGroup>
