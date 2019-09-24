@@ -8,14 +8,12 @@
              xmlns:igDock="http://infragistics.com/DockManager"       
              xmlns:igThemes="http://infragistics.com/Themes" 
              xmlns:local="clr-namespace:PrismOutlook.Modules.Mail.Menus"
-             Header="Home">
+             Header="Mail">
 
    <igWpf:RibbonGroup Caption="New">
       <igWpf:ToolHorizontalWrapPanel>
          <igWpf:ButtonTool Caption="Button" igWpf:RibbonGroup.MaximumSize="ImageAndTextLarge">
-
          </igWpf:ButtonTool>
       </igWpf:ToolHorizontalWrapPanel>
-
    </igWpf:RibbonGroup>
 </igWpf:RibbonTabItem>

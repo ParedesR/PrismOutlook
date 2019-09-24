@@ -33,23 +33,26 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ApdcLibrary.Graphics.OpenCascadeProxy">
-      <HintPath>..\..\..\..\..\SourceCode\APDC\CPlusPlus\ApdcLibrary\Graphics\x64\Debug\ApdcLibrary.Graphics.OpenCascadeProxy.dll</HintPath>
+    <Reference Include="InfragisticsWPF4.Controls.Menus.XamDataTree.v16.2">
+      <HintPath>..\..\ThirdPartyLibraries\Infragistics\Wpf_20162_Signed\InfragisticsWPF4.Controls.Menus.XamDataTree.v16.2.dll</HintPath>
+    </Reference>
+    <Reference Include="InfragisticsWPF4.DockManager.v16.2">
+      <HintPath>..\..\ThirdPartyLibraries\Infragistics\Wpf_20162_Signed\InfragisticsWPF4.DockManager.v16.2.dll</HintPath>
     </Reference>
     <Reference Include="InfragisticsWPF4.OutlookBar.v16.2">
-      <HintPath>..\..\..\..\..\SourceCode\APDC\CSharp\ApdcLibrary\ThirdPartyLibraries\Infragistics\Wpf_20162_Signed\InfragisticsWPF4.OutlookBar.v16.2.dll</HintPath>
+      <HintPath>..\..\ThirdPartyLibraries\Infragistics\Wpf_20162_Signed\InfragisticsWPF4.OutlookBar.v16.2.dll</HintPath>
     </Reference>
     <Reference Include="InfragisticsWPF4.Ribbon.v16.2">
-      <HintPath>..\..\..\..\..\SourceCode\APDC\CSharp\ApdcLibrary\ThirdPartyLibraries\Infragistics\Wpf_20162_Signed\InfragisticsWPF4.Ribbon.v16.2.dll</HintPath>
+      <HintPath>..\..\ThirdPartyLibraries\Infragistics\Wpf_20162_Signed\InfragisticsWPF4.Ribbon.v16.2.dll</HintPath>
     </Reference>
     <Reference Include="InfragisticsWPF4.Themes.Office2013.v16.2">
-      <HintPath>..\..\..\..\..\SourceCode\APDC\CSharp\ApdcLibrary\ThirdPartyLibraries\Infragistics\Wpf_20162_Signed\InfragisticsWPF4.Themes.Office2013.v16.2.dll</HintPath>
+      <HintPath>..\..\ThirdPartyLibraries\Infragistics\Wpf_20162_Signed\InfragisticsWPF4.Themes.Office2013.v16.2.dll</HintPath>
     </Reference>
     <Reference Include="InfragisticsWPF4.Undo.v16.2">
-      <HintPath>..\..\..\..\..\SourceCode\APDC\CSharp\ApdcLibrary\ThirdPartyLibraries\Infragistics\Wpf_20162_Signed\InfragisticsWPF4.Undo.v16.2.dll</HintPath>
+      <HintPath>..\..\ThirdPartyLibraries\Infragistics\Wpf_20162_Signed\InfragisticsWPF4.Undo.v16.2.dll</HintPath>
     </Reference>
     <Reference Include="InfragisticsWPF4.v16.2">
-      <HintPath>..\..\..\..\..\SourceCode\APDC\CSharp\ApdcLibrary\ThirdPartyLibraries\Infragistics\Wpf_20162_Signed\InfragisticsWPF4.v16.2.dll</HintPath>
+      <HintPath>..\..\ThirdPartyLibraries\Infragistics\Wpf_20162_Signed\InfragisticsWPF4.v16.2.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -70,6 +73,9 @@
     <Compile Include="ContactsModule.cs" />
     <Compile Include="Menus\ContactsGroup.xaml.cs">
       <DependentUpon>ContactsGroup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menus\HomeTab.xaml.cs">
+      <DependentUpon>HomeTab.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -109,12 +115,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Menus\HomeTab.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\ViewA.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Prism.Unity">
+      <Version>7.2.0.1367</Version>
+    </PackageReference>
     <PackageReference Include="Prism.Wpf" Version="7.2.0.1367" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

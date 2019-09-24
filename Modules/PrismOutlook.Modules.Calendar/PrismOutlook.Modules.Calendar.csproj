@@ -33,23 +33,26 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="InfragisticsWPF4.Controls.Menus.XamDataTree.v16.2">
+      <HintPath>..\..\ThirdPartyLibraries\Infragistics\Wpf_20162_Signed\InfragisticsWPF4.Controls.Menus.XamDataTree.v16.2.dll</HintPath>
+    </Reference>
     <Reference Include="InfragisticsWPF4.DockManager.v16.2">
-      <HintPath>..\..\..\..\..\SourceCode\APDC\CSharp\ApdcLibrary\ThirdPartyLibraries\Infragistics\Wpf_20162_Signed\InfragisticsWPF4.DockManager.v16.2.dll</HintPath>
+      <HintPath>..\..\ThirdPartyLibraries\Infragistics\Wpf_20162_Signed\InfragisticsWPF4.DockManager.v16.2.dll</HintPath>
     </Reference>
     <Reference Include="InfragisticsWPF4.OutlookBar.v16.2">
-      <HintPath>..\..\..\..\..\SourceCode\APDC\CSharp\ApdcLibrary\ThirdPartyLibraries\Infragistics\Wpf_20162_Signed\InfragisticsWPF4.OutlookBar.v16.2.dll</HintPath>
+      <HintPath>..\..\ThirdPartyLibraries\Infragistics\Wpf_20162_Signed\InfragisticsWPF4.OutlookBar.v16.2.dll</HintPath>
     </Reference>
     <Reference Include="InfragisticsWPF4.Ribbon.v16.2">
-      <HintPath>..\..\..\..\..\SourceCode\APDC\CSharp\ApdcLibrary\ThirdPartyLibraries\Infragistics\Wpf_20162_Signed\InfragisticsWPF4.Ribbon.v16.2.dll</HintPath>
+      <HintPath>..\..\ThirdPartyLibraries\Infragistics\Wpf_20162_Signed\InfragisticsWPF4.Ribbon.v16.2.dll</HintPath>
     </Reference>
     <Reference Include="InfragisticsWPF4.Themes.Office2013.v16.2">
-      <HintPath>..\..\..\..\..\SourceCode\APDC\CSharp\ApdcLibrary\ThirdPartyLibraries\Infragistics\Wpf_20162_Signed\InfragisticsWPF4.Themes.Office2013.v16.2.dll</HintPath>
+      <HintPath>..\..\ThirdPartyLibraries\Infragistics\Wpf_20162_Signed\InfragisticsWPF4.Themes.Office2013.v16.2.dll</HintPath>
     </Reference>
     <Reference Include="InfragisticsWPF4.Undo.v16.2">
-      <HintPath>..\..\..\..\..\SourceCode\APDC\CSharp\ApdcLibrary\ThirdPartyLibraries\Infragistics\Wpf_20162_Signed\InfragisticsWPF4.Undo.v16.2.dll</HintPath>
+      <HintPath>..\..\ThirdPartyLibraries\Infragistics\Wpf_20162_Signed\InfragisticsWPF4.Undo.v16.2.dll</HintPath>
     </Reference>
     <Reference Include="InfragisticsWPF4.v16.2">
-      <HintPath>..\..\..\..\..\SourceCode\APDC\CSharp\ApdcLibrary\ThirdPartyLibraries\Infragistics\Wpf_20162_Signed\InfragisticsWPF4.v16.2.dll</HintPath>
+      <HintPath>..\..\ThirdPartyLibraries\Infragistics\Wpf_20162_Signed\InfragisticsWPF4.v16.2.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -103,6 +106,9 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Prism.Unity">
+      <Version>7.2.0.1367</Version>
+    </PackageReference>
     <PackageReference Include="Prism.Wpf" Version="7.2.0.1367" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

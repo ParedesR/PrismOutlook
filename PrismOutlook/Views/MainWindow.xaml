@@ -21,6 +21,7 @@
 
       <DockPanel LastChildFill="True">
          <igWpf:XamOutlookBar DockPanel.Dock="Left" Width="200"
+                              SelectedGroupChanged="XamOutlookBar_OnSelectedGroupChanged"
                               prism:RegionManager.RegionName="{x:Static core:RegionNames.OutlookGroupRegion}">
          </igWpf:XamOutlookBar>
          <ContentControl prism:RegionManager.RegionName="{x:Static core:RegionNames.ContentRegion}">

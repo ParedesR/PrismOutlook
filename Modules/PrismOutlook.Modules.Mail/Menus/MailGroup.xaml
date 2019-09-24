@@ -3,15 +3,26 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
              xmlns:ig="http://schemas.infragistics.com/xaml"
              xmlns:igWpf="http://schemas.infragistics.com/xaml/wpf"       
              xmlns:igDock="http://infragistics.com/DockManager"       
              xmlns:igThemes="http://infragistics.com/Themes" 
+             xmlns:prism="http://prismlibrary.com/"
+             prism:ViewModelLocator.AutoWireViewModel="True"
              xmlns:local="clr-namespace:PrismOutlook.Modules.Mail.Menus"
              Header="Mail">
 
    <Grid>
-      <TextBlock Text="Testing"></TextBlock>
-            
+      <ig:XamDataTree x:Name="_dataTree" ItemsSource="{Binding Items}">
+         <i:Interaction.Triggers>
+            <i:EventTrigger EventName="ActiveNodeChanged">
+               <prism:InvokeCommandAction Command="{Binding SelectedCommand}" TriggerParameterPath="NewActiveTreeNode.Data"/>
+            </i:EventTrigger>
+         </i:Interaction.Triggers>
+         <ig:XamDataTree.GlobalNodeLayouts>
+            <ig:NodeLayout Key="GlobalLayout" TargetTypeName="NavigationItem" DisplayMemberPath="Caption"/>
+         </ig:XamDataTree.GlobalNodeLayouts>
+      </ig:XamDataTree>
    </Grid>
 </igWpf:OutlookBarGroup>

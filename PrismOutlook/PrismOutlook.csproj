@@ -36,23 +36,26 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="InfragisticsWPF4.Controls.Menus.XamDataTree.v16.2">
+      <HintPath>..\ThirdPartyLibraries\Infragistics\Wpf_20162_Signed\InfragisticsWPF4.Controls.Menus.XamDataTree.v16.2.dll</HintPath>
+    </Reference>
     <Reference Include="InfragisticsWPF4.DockManager.v16.2">
-      <HintPath>..\..\..\..\SourceCode\APDC\CSharp\ApdcLibrary\ThirdPartyLibraries\Infragistics\Wpf_20162_Signed\InfragisticsWPF4.DockManager.v16.2.dll</HintPath>
+      <HintPath>..\ThirdPartyLibraries\Infragistics\Wpf_20162_Signed\InfragisticsWPF4.DockManager.v16.2.dll</HintPath>
     </Reference>
     <Reference Include="InfragisticsWPF4.OutlookBar.v16.2">
-      <HintPath>..\..\..\..\SourceCode\APDC\CSharp\ApdcLibrary\ThirdPartyLibraries\Infragistics\Wpf_20162_Signed\InfragisticsWPF4.OutlookBar.v16.2.dll</HintPath>
+      <HintPath>..\ThirdPartyLibraries\Infragistics\Wpf_20162_Signed\InfragisticsWPF4.OutlookBar.v16.2.dll</HintPath>
     </Reference>
     <Reference Include="InfragisticsWPF4.Ribbon.v16.2">
-      <HintPath>..\..\..\..\SourceCode\APDC\CSharp\ApdcLibrary\ThirdPartyLibraries\Infragistics\Wpf_20162_Signed\InfragisticsWPF4.Ribbon.v16.2.dll</HintPath>
+      <HintPath>..\ThirdPartyLibraries\Infragistics\Wpf_20162_Signed\InfragisticsWPF4.Ribbon.v16.2.dll</HintPath>
     </Reference>
     <Reference Include="InfragisticsWPF4.Themes.Office2013.v16.2">
-      <HintPath>..\..\..\..\SourceCode\APDC\CSharp\ApdcLibrary\ThirdPartyLibraries\Infragistics\Wpf_20162_Signed\InfragisticsWPF4.Themes.Office2013.v16.2.dll</HintPath>
+      <HintPath>..\ThirdPartyLibraries\Infragistics\Wpf_20162_Signed\InfragisticsWPF4.Themes.Office2013.v16.2.dll</HintPath>
     </Reference>
     <Reference Include="InfragisticsWPF4.Undo.v16.2">
-      <HintPath>..\..\..\..\SourceCode\APDC\CSharp\ApdcLibrary\ThirdPartyLibraries\Infragistics\Wpf_20162_Signed\InfragisticsWPF4.Undo.v16.2.dll</HintPath>
+      <HintPath>..\ThirdPartyLibraries\Infragistics\Wpf_20162_Signed\InfragisticsWPF4.Undo.v16.2.dll</HintPath>
     </Reference>
     <Reference Include="InfragisticsWPF4.v16.2">
-      <HintPath>..\..\..\..\SourceCode\APDC\CSharp\ApdcLibrary\ThirdPartyLibraries\Infragistics\Wpf_20162_Signed\InfragisticsWPF4.v16.2.dll</HintPath>
+      <HintPath>..\ThirdPartyLibraries\Infragistics\Wpf_20162_Signed\InfragisticsWPF4.v16.2.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -82,8 +85,10 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Core\Regions\DependentViewRegionBehavior.cs" />
     <Compile Include="Core\Regions\XamOutlookBarRegionAdapter.cs" />
     <Compile Include="Core\Regions\XamRibbonRegionAdapter.cs" />
+    <Compile Include="ViewModels\MailGroupViewModel.cs" />
     <Compile Include="ViewModels\MainWindowViewModel.cs" />
     <Compile Include="Views\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
