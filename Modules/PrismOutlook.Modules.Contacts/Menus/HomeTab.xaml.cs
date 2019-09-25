@@ -1,4 +1,6 @@
-﻿namespace PrismOutlook.Modules.Contacts.Menus
+﻿using Infragistics.Windows.Ribbon;
+
+namespace PrismOutlook.Modules.Contacts.Menus
 {
    /// <summary>
    /// Interaction logic for HomeTab.xaml
@@ -8,6 +10,8 @@
       public HomeTab()
       {
          InitializeComponent();
+
+         SetResourceReference(StyleProperty, typeof(RibbonTabItem));
       }
    }
 }

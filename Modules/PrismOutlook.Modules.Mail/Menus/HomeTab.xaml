@@ -7,12 +7,15 @@
              xmlns:igWpf="http://schemas.infragistics.com/xaml/wpf"       
              xmlns:igDock="http://infragistics.com/DockManager"       
              xmlns:igThemes="http://infragistics.com/Themes" 
+             xmlns:prism="http://prismlibrary.com/"             
+             prism:ViewModelLocator.AutoWireViewModel="True"
              xmlns:local="clr-namespace:PrismOutlook.Modules.Mail.Menus"
              Header="Mail">
 
    <igWpf:RibbonGroup Caption="New">
       <igWpf:ToolHorizontalWrapPanel>
-         <igWpf:ButtonTool Caption="Button" igWpf:RibbonGroup.MaximumSize="ImageAndTextLarge">
+         <igWpf:ButtonTool Caption="Button" igWpf:RibbonGroup.MaximumSize="ImageAndTextLarge"
+                           Command="{Binding TestCommand}">
          </igWpf:ButtonTool>
       </igWpf:ToolHorizontalWrapPanel>
    </igWpf:RibbonGroup>

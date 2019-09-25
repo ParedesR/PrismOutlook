@@ -36,11 +36,21 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="InfragisticsWPF4.Controls.Grids.XamGrid.v16.2">
+      <HintPath>..\ThirdPartyLibraries\Infragistics\Wpf_20162_Signed\InfragisticsWPF4.Controls.Grids.XamGrid.v16.2.dll</HintPath>
+    </Reference>
     <Reference Include="InfragisticsWPF4.Controls.Menus.XamDataTree.v16.2">
       <HintPath>..\ThirdPartyLibraries\Infragistics\Wpf_20162_Signed\InfragisticsWPF4.Controls.Menus.XamDataTree.v16.2.dll</HintPath>
     </Reference>
+    <Reference Include="InfragisticsWPF4.DataPresenter.v16.2">
+      <HintPath>..\ThirdPartyLibraries\Infragistics\Wpf_20162_Signed\InfragisticsWPF4.DataPresenter.v16.2.dll</HintPath>
+    </Reference>
     <Reference Include="InfragisticsWPF4.DockManager.v16.2">
       <HintPath>..\ThirdPartyLibraries\Infragistics\Wpf_20162_Signed\InfragisticsWPF4.DockManager.v16.2.dll</HintPath>
+    </Reference>
+    <Reference Include="InfragisticsWPF4.Editors.v16.2, Version=16.2.20162.2045, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ThirdPartyLibraries\Infragistics\Wpf_20162_Signed\InfragisticsWPF4.Editors.v16.2.dll</HintPath>
     </Reference>
     <Reference Include="InfragisticsWPF4.OutlookBar.v16.2">
       <HintPath>..\ThirdPartyLibraries\Infragistics\Wpf_20162_Signed\InfragisticsWPF4.OutlookBar.v16.2.dll</HintPath>
@@ -85,6 +95,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Core\Regions\DependentViewInfo.cs" />
     <Compile Include="Core\Regions\DependentViewRegionBehavior.cs" />
     <Compile Include="Core\Regions\XamOutlookBarRegionAdapter.cs" />
     <Compile Include="Core\Regions\XamRibbonRegionAdapter.cs" />

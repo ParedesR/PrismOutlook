@@ -82,6 +82,7 @@
     <Compile Include="ApplicationCommands.cs" />
     <Compile Include="Attributes\DependentViewAttribute.cs" />
     <Compile Include="IOutlookBarGroup.cs" />
+    <Compile Include="ISupportDataContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

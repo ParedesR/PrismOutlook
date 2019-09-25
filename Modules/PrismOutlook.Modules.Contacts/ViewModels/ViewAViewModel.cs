@@ -5,10 +5,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Prism.Regions;
 
 namespace PrismOutlook.Modules.Contacts.ViewModels
 {
-    public class ViewAViewModel : BindableBase
+    public class ViewAViewModel : BindableBase, IRegionMemberLifetime
     {
         private string _message;
         public string Message
@@ -21,5 +22,7 @@ namespace PrismOutlook.Modules.Contacts.ViewModels
         {
             Message = "View A from your Prism Module";
         }
+
+        public bool KeepAlive => false;
     }
 }
